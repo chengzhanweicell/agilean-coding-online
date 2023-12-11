@@ -1,7 +1,7 @@
 // 实现一个对外提供的工具方法，具备以下功能
 // 1. 通过一个一维数组生成一棵树；
 // 2. 生成的树支持指定子节点对应的 key，有 children 和 next 两个选择；
-// 3. 返回值的类型优好；
+// 3. 返回值的类型友好；
 
 const data: Array<{ id: string; name: string; pId?: string }> = [
     { id: '0', name: 'item0', pId: undefined },
