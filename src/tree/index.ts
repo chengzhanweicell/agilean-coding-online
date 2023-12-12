@@ -3,7 +3,7 @@
 // 2. 生成的树支持指定子节点对应的 key，有 children 和 next 两个选择；
 // 3. 返回值的类型友好；
 
-const data: Array<{ id: string; name: string; pId?: string }> = [
+var data: Array<{ id: string; name: string; pId?: string }> = [
     { id: '0', name: 'item0', pId: undefined },
     { id: '0_1', name: 'item0_1', pId: '0' },
     { id: '0_2', name: 'item0_2', pId: '0' },

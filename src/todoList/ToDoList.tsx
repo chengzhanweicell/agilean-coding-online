@@ -6,8 +6,8 @@
 import { useState } from 'react';
 
 export const ToDoList = () => {
-    const [list, setList] = useState<Array<{ id: number; title: string }>>([]);
-    const [input, setInput] = useState('');
+    var [list, setList] = useState<Array<{ id: number; title: string }>>([]);
+    var [input, setInput] = useState('');
     return (
         <div>
             {list.map((it, idx) => (

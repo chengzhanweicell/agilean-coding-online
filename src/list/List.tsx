@@ -4,7 +4,7 @@
 import { useState } from "react";
 
 export const List = () => {
-  const [data, setData] = useState(
+  var [data, setData] = useState(
     new Array(150).fill(1).map((_, idx) => ({ id: idx, name: `子项${idx}` })),
   );
 
