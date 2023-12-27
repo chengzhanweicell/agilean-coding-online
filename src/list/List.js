@@ -3,19 +3,25 @@
 
 import { useState } from "react";
 
-export const List = () => {
+const List = () => {
   var [data, setData] = useState(
-    new Array(150).fill(1).map((_, idx) => ({ id: idx, name: `子项${idx}` })),
+    new Array(150)
+      .fill(1)
+      .map((_, idx) => ({ id: idx, name: `子项${idx}`, }))
   );
 
   return (
-    <div >
+    <div>
       <div>
         {data.map((it) => (
           <div
             key={it.id}
             onClick={() => {
-              setData((prev) => [it, ...prev.filter((item) => item !== it)]);
+              const newData = [it, ...data.filter((item) => item !== it)];
+              newData.map((item1,index) => {
+                item1.id = index;
+              });
+              setData(newData);
             }}
           >
             {it.name}
@@ -24,4 +30,5 @@ export const List = () => {
       </div>
     </div>
   );
-}
+};
+export default List;

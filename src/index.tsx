@@ -1,5 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
+import Tree from '../src/list/List'
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
@@ -7,7 +8,9 @@ const root = ReactDOM.createRoot(
 
 root.render(
   <React.StrictMode>
-    <div />
+    <div>
+      <Tree></Tree>
+    </div>
   </React.StrictMode>
 );
 
